@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Fast Track</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">
+          <img src="./src/assets/LOGOTIPO 3.png" alt="logo fast track" />
+        </a>
+
+        <!--MENU-->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#contact">Contatos</a></li>
+          </ul>
+        </div>
+        <i class="toggle ph ph-list"></i>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="section" id="home" name="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./src/assets/home.png"
+              alt="Homem instalando rastreador no carro"
+            />
+            <img
+              class="logotipo flicker-in-1"
+              src="./src/assets/LOGOTIPO 4.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text">
+            <h2 class="title">Instalando seus equipamentos com confiança</h2>
+            <p>
+              Instaladora localizada em Florianópolis, especializada em
+              instalação de rastreadores.
+            </p>
+            <img
+              class="title-logo-home"
+              src="./src/assets/RastreadoresAcessoriosSensores.png"
+              alt=""
+            />
+            <a
+              href="https://api.whatsapp.com/send?phone=5548996700253"
+              class="button"
+              target="_blank"
+              >Faça seu agendamento</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+      <!-- SERVIÇOS -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <div class="service-box">
+            <img class="title-logo" src="./src/assets/Serviços.png" alt="" />
+            <p class="subtitle">
+              Atendemos em toda região de Florianópolis, São José, Biguaçu e
+              Palhoça.
+            </p>
+          </div>
+          <div class="cards grid">
+            <div class="card">
+              <i class="ph ph-gear-six"></i>
+              <h3 class="title">Instalação simples</h3>
+              <p>R$ 100,00</p>
+            </div>
+            <div class="card">
+              <div class="i-box">
+                <i class="ph ph-gear-six"></i>
+                <p>+</p>
+                <i class="ph ph-lock-key"></i>
+              </div>
+              <h3 class="title">Instalação com bloqueio</h3>
+              <p>R$ 130,00</p>
+            </div>
+            <div class="card">
+              <i class="ph ph-toolbox"></i>
+              <h3 class="title">Manutenção</h3>
+              <p>R$ 80,00</p>
+            </div>
+            <div class="card">
+              <i class="ph ph-x-circle"></i>
+              <h3 class="title">Remoção</h3>
+              <p>R$ 70,00</p>
+            </div>
+            <div class="card">
+              <i class="ph ph-broadcast"></i>
+              <h3 class="title">Sensores</h3>
+              <p>Consultar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider-2"></div>
+
+      <!--CONTACT-->
+
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <img
+              class="title-logo"
+              src="./src/assets/EntreEmContato.png"
+              alt=""
+            />
+            <p>Conecte-se com a Fast Track e agende seu serviço.</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5548996700253"
+              class="button"
+              target="_blank"
+              ><i class="ph ph-whatsapp-logo"></i> Entrar em contato
+            </a>
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li>
+                <i class="ph ph-device-mobile"></i>
+                <p class="celular">(48) 9 9670-0253</p>
+              </li>
+              <li>
+                <i class="ph ph-envelope"></i>
+                <p class="email">fasttrackinstaladora@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home"
+            ><img src="./src/assets/LOGOTIPO 4.png" alt=""
+          /></a>
+          <p>&copy; 2024 - FAST TRACK</p>
+          <p>Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+      <i class="ph ph-arrow-fat-line-up"></i>
+    </a>
+
+    <!-- Scripts -->
+
+    <!-- SCROLLREVEAL.JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
