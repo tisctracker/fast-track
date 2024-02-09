@@ -20,12 +20,12 @@ img {
 }
 
 :root {
-  --color-primary: #161616;
+  --color-primary: #000;
   --color-secondary: #f9e335;
 
   --gradient-divider1: linear-gradient(90deg, #f9e335, #00000000);
   --gradient-divider2: linear-gradient(90deg, #00000000, #f9e335);
-  --gradient-divider3: linear-gradient(90deg, #ffffff 50%, #1f1f1f 65%);
+  --gradient-divider3: linear-gradient(90deg, #ffffff 20%, #0000009d 65%);
 
   --gradient-primary: linear-gradient(
     180deg,
@@ -140,7 +140,7 @@ header {
   height: 4.5rem;
   box-shadow: 0rem 0.1rem 0.5rem #000;
   background: var(--gradient-divider3);
-  border-bottom: 0.3rem solid var(--color-secondary);
+  border-bottom: 0.3rem solid #000;
 }
 
 .flicker-in-1 {
@@ -405,7 +405,7 @@ header nav .menu .grid li a:hover,
 header nav .menu .grid li a.active {
   background: var(--color-primary);
   color: var(--color-secondary);
-  outline: 0.2rem solid var(--color-secondary);
+  outline: 0.2rem dashed var(--color-secondary);
 }
 
 header nav .menu .grid li a #home {
@@ -493,6 +493,7 @@ nav.show ul.grid {
   margin-top: 2rem;
 }
 #home .image {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,9 +501,8 @@ nav.show ul.grid {
   height: 20rem;
 }
 #home .image img.logotipo {
-  width: 75%;
-  top: 100%;
-  left: 0%;
+  position: absolute;
+  width: 85%;
 }
 
 #home .image img,
@@ -725,11 +725,13 @@ footer .brand p {
   position: fixed;
   background: var(--color-primary);
   color: var(--color-secondary);
+  outline: .2rem dashed var(--color-secondary);
+  border-radius: 50%;
   right: 2rem;
   bottom: 4rem;
 
   padding: 0.5rem;
-  clip-path: circle();
+  
 
   font-size: 1.5rem;
   line-height: 0;
@@ -784,14 +786,13 @@ footer .brand p {
   }
 
   #home .image {
-    padding-top: 8rem;
+    
     width: 16rem;
     height: 10rem;
   }
 
   #home .image img.logotipo {
-    width: 12rem;
-    left: 10%;
+    bottom: 0%;
   }
 
   #home .text img {
