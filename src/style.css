@@ -62,11 +62,10 @@ img {
 html {
   min-width: 100%;
   min-height: 100vh;
-  background: var(--gradient-primary);
+  background: #000;
   overflow-x: hidden;
 }
 body {
-  background: url(./assets/bg.png) center/cover no-repeat;
   font: 400 1rem var(--body-font);
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -458,6 +457,31 @@ nav.show ul.grid {
   max-height: 100vh;
 }
 
+#home .bg-home{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+#home .bg-home::after{
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.1) 50%, rgb(0, 0, 0) 90%),
+  linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.1) 50%, rgb(0, 0, 0) 90%);
+}
+
+#home .bg-home .video{
+  height: 100vh;
+}
+
 #home .container {
   display: flex;
   flex-direction: row-reverse;
@@ -469,19 +493,16 @@ nav.show ul.grid {
   margin-top: 2rem;
 }
 #home .image {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 64rem;
-}
-#home .image img {
-  position: relative;
-
-  margin: 0 auto;
+  height: 20rem;
 }
 #home .image img.logotipo {
-  position: absolute;
   width: 75%;
-  top: 35%;
-  left: 10%;
+  top: 100%;
+  left: 0%;
 }
 
 #home .image img,
@@ -531,8 +552,7 @@ nav.show ul.grid {
 
 #services {
   display: flex;
-
-  min-height: 100vh;
+  min-height: fit-content;
 }
 #services .cards {
   display: flex;
@@ -754,7 +774,7 @@ footer .brand p {
   /* HOME */
 
   #home {
-    margin-top: 8rem;
+    margin-top: 0rem;
     min-height: fit-content;
   }
 
@@ -764,6 +784,7 @@ footer .brand p {
   }
 
   #home .image {
+    padding-top: 8rem;
     width: 16rem;
     height: 10rem;
   }
