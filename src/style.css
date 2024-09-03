@@ -562,6 +562,10 @@ nav.show ul.grid {
   gap: 4rem;
 }
 
+p span{
+  color: var(--color-secondary);
+}
+
 .card {
   position: relative;
   display: flex;
